@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const app = express();
 
-require("dotenv/config");
+require('dotenv').config();
 
 //Middleware
 app.use(express.static(path.join(__dirname, "/build")));
