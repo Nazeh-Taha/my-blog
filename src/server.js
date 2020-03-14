@@ -34,7 +34,7 @@ app.use("/api/admin/posts", adminPost);
 app.use("/api/allarticles", allArticles);
 //Connect to mongoDB
 mongoose
-  .connect(process.env.DB_CONNECTION, {
+  .connect(process.env.DB_CONNECTION.toString(), {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
